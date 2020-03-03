@@ -6,3 +6,7 @@ services:
         build: ./visits
         ports:
             - "4001:8081"
+    node-app-crash:
+        build: ./visits_crash
+        ports:
+            - "4002:8001"
