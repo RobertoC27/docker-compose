@@ -8,5 +8,9 @@ services:
             - "4001:8081"
     node-app-crash:
         build: ./visits _crash
+        # restart: no
+        restart: always
+        # restart: on-failure
+        # restart: unless-stopped
         ports:
             - "4002:8081"
